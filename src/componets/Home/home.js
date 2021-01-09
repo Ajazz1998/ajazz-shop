@@ -1,7 +1,10 @@
-import Products from './Products/products';
+import Products from '../Products/products';
 
 const home = () => {
-    <Products />
+    return (
+        <Products />
+
+    )
 }
 
 export default home;
