@@ -16,6 +16,7 @@
     background: #3498db;
     border-radius: 5px;
     animation: spinner 1.8s ease-in-out infinite;
+    -webkit-animation: spinner 1.8s ease-in-out infinite;
 }
 
 .loader::before, .loader::after {
@@ -25,6 +26,7 @@
     animation: spinner 1.8s ease-in-out infinite;
     height: 10px;
     border-radius: 5px;
+    -webkit-animation: spinner 1.8s ease-in-out infinite;
 }
 
 .loader::before{

@@ -11,6 +11,7 @@ export const ShopState = ({ children }) => {
           `https://api-movie-my.herokuapp.com/movies`
         );
         const data = await response.json();
+        console.log(data)
         setProducts(data);
       };
 

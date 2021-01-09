@@ -1,23 +1,23 @@
 import { useContext } from "react";
-import { MovieContext } from "../../Context/MovieContext";
-import Container from "../GlobalComponents/Container";
-import Loader from "../GlobalComponents/Loader";
+import { ShopContext } from "../../Context/ShopContext";
+import Container from "../ReusableComponets/Container";
+import Loader from "../ReusableComponets/loader";
 
 const Products = () => {
-  const { products, isLoading } = useContext(MovieContext);
+  const { products, isLoading } = useContext(ShopContext);
 
   return (
     <div className="products">
       <Container>
-        {products.results && products.results.length === 0 && (
+        {products && products.length === 0 && (
           <h1 className="error">Result not found</h1>
         )}
         {!isLoading ? (
-          products.results &&
-          products.results.map((movieItem, index) => (
+          products &&
+          products.map((Products) => (
             <img
-              key={index}
-              src={`https://image.tmdb.org/t/p/w400/${movieItem.poster_path}`}
+              key={Products.id}
+              src={`${Products.img}`}
               alt="poster"
             />
           ))

@@ -1,9 +1,14 @@
 import './App.css';
-
+import Products from './componets/Products/products';
+import { ShopState } from "./Context/ShopContext";
 function App() {
   return (
     <div className="App">
-        <h1> Hello World</h1>
+    <ShopState>
+
+       <Products />
+
+    </ShopState>
     </div>
   );
 }
