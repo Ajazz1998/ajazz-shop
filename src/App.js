@@ -1,12 +1,14 @@
 import './App.css';
-import Products from './componets/Products/products';
+import Home from './componets/Home/home';
+// import SinglePage from './componets/Singlepage/singlepage';
 import { ShopState } from "./Context/ShopContext";
+
 function App() {
   return (
     <div className="App">
     <ShopState>
 
-       <Products />
+       <Home />
 
     </ShopState>
     </div>
