@@ -15,8 +15,8 @@ class MainNav extends Component {
       isHidden: !this.state.isHidden
     })
   }
-      //   <FontAwesomeIcon className="bar" icon={faBars} onClick={this.toggleHidden.bind(this)} />
   render() {
+      //   <FontAwesomeIcon className="bar" icon={faBars} onClick={this.toggleHidden.bind(this)} />
 
     return(
       <nav className="main-nav">
