@@ -24,8 +24,9 @@ const Products = () => {
                     alt="poster"
                     className="img"
                   />
-
+                <p>{Products.price}</p>
                   <a href={Products.link}><p>{Products.title}</p></a>
+                  <p>{Products.rate}</p>
                 </div>
 
               ))
