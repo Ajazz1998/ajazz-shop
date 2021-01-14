@@ -1,6 +1,20 @@
 .product  {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.p-box{
+    border: 1px solid black;
+    white-space: nowrap;
     width: 200px;
+    display: inline-block;
+
+}
+
+.p-box a p{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 img{

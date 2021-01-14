@@ -17,12 +17,17 @@ const Products = () => {
             {!isLoading ? (
               products &&
               products.map((Products) => (
-                <img
-                  key={Products.id}
-                  src={`${Products.img}`}
-                  alt="poster"
-                  className="img"
-                />
+                <div className="p-box">
+                    <img
+                    key={Products.id}
+                    src={`${Products.img}`}
+                    alt="poster"
+                    className="img"
+                  />
+
+                  <a href={Products.link}><p>{Products.title}</p></a>
+                </div>
+
               ))
             ) : (
               <Loader />
