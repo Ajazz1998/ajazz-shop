@@ -19,6 +19,7 @@ const Products = () => {
               key={Products.id}
               src={`${Products.img}`}
               alt="poster"
+              className="img"
             />
           ))
         ) : (
