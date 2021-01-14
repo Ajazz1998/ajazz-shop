@@ -6,8 +6,6 @@
 }
 
 .p-box{
-    border: 1px solid black;
-    white-space: nowrap;
     width: 250px;
 
 }
@@ -17,9 +15,10 @@ a{
 }
 
 .p-box p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
     overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 10px;
 
 }
 
