@@ -21,13 +21,12 @@ class MainNav extends Component {
     return(
       <nav className="main-nav">
 
+      <Link to={'/home'}>
+      <p className='active'>Logo</p>
+    </Link>
       <div className="show-menu">
-      <div className="log">
-          <Link to={'/home'}>
-          <p className='active'>Logo</p>
-        </Link>
-      </div>
 
+ 
 
       <Link to={'/home'}>
         <p className='active'>Home</p>
