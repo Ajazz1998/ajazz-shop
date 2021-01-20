@@ -22,9 +22,12 @@ class MainNav extends Component {
       <nav className="main-nav">
 
       <div className="show-menu">
-      <Link to={'/home'}>
-        <p className='active'>Logo</p>
-      </Link>
+      <div className="log">
+          <Link to={'/home'}>
+          <p className='active'>Logo</p>
+        </Link>
+      </div>
+
 
       <Link to={'/home'}>
         <p className='active'>Home</p>
