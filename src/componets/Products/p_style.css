@@ -3,6 +3,10 @@
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     grid-gap: 10px;
+    border: 1px solid #000;
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: -50px;
 }
 
 .p-box{
