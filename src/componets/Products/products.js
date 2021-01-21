@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import Container from "../ReusableComponets/Container";
 import Loader from "../ReusableComponets/loader";
+
 import './p_style.css';
 
 const Products = () => {
@@ -9,11 +10,13 @@ const Products = () => {
 
   return (
     <div className="products">
+    
       <Container>
         <div className="product">
             {products && products.length === 0 && (
               <h1 className="error">Result not found</h1>
             )}
+            
             {!isLoading ? (
               products &&
               products.map((Products) => (
