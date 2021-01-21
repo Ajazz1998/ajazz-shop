@@ -19,7 +19,7 @@ const Products = () => {
               <div className="p-box">
               <img
               key={Products.id}
-              src={`${Products.img[1]}`}
+              src={`${Products.img}`}
               alt="poster"
               className="img"
             />
