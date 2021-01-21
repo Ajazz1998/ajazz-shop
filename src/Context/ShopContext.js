@@ -28,6 +28,9 @@ export const ShopState = ({ children }) => {
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = products.slice(indexOfFirstPost, indexOfLastPost);
 
+     // Change page
+    const paginate = pageNumber => setCurrentPage(pageNumber);
+
     return (
         <ShopContext.Provider
         value={{
@@ -38,7 +41,8 @@ export const ShopState = ({ children }) => {
             currentPage, 
             setCurrentPage,
             postsPerPage,
-            currentPosts
+            currentPosts,
+            paginate,
         }}
         >
         {children}

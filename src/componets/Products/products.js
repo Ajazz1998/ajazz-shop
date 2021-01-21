@@ -2,11 +2,12 @@ import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import Container from "../ReusableComponets/Container";
 import Loader from "../ReusableComponets/loader";
+import Pagination from '../ReusableComponets/Pagination';
 
 import './p_style.css';
 
 const Products = () => {
-  const {  isLoading, currentPosts } = useContext(ShopContext);
+  const { products, paginate, postsPerPage, isLoading, currentPosts } = useContext(ShopContext);
 
   return (
     <div className="products">
@@ -37,10 +38,18 @@ const Products = () => {
 
                 </div>
 
+
               ))
             ) : (
               <Loader />
             )}
+
+            
+            <Pagination
+            postsPerPage={postsPerPage}
+            totalPosts={products.length}
+            paginate={paginate}
+          />
         </div>
         
       </Container>
