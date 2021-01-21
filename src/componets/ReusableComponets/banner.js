@@ -8,32 +8,28 @@ const Products = () => {
   const { products, isLoading } = useContext(ShopContext);
 
   return (
-    <div className="products">
       <Container>
-        <div className="product">
+        <div className="bannner">
             {products && products.length === 0 && (
               <h1 className="error">Result not found</h1>
             )}
             {!isLoading ? (
-              products &&
-              <div className="p-box">
-              <img
-              key={Products.id}
-              src={`${Products.img}`}
-              alt="poster"
-              className="img"
-            />
-          <p>{Products.price}</p>
-            <a href={Products.link}><p>{Products.title}</p></a>
-            <p>{Products.rate}</p>
-          </div>
+                <div className="b-box">
+                    <img
+                    src={`${products[0].img}`}
+                    alt="poster"
+                    className="img"
+                  />
+                <p>{products[0].price}</p>
+                  <a href={products[0].link}><p>{products[0].title}</p></a>
+                  <p>{products[0].rate}</p>
+                </div>
             ) : (
               <Loader />
             )}
         </div>
         
       </Container>
-    </div>
   );
 };
 
