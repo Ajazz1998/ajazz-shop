@@ -4,8 +4,6 @@ import Container from "./ReusableComponets/Container";
 import Loader from "./ReusableComponets/loader";
 import Carousel from "react-elastic-carousel";
 
-import './p_style.css';
-
 const Carousels = () => {
   const { products, isLoading, } = useContext(ShopContext);
 

@@ -3,10 +3,10 @@ import Carousel from '../ReusableComponets/carousel';
 
 const home = () => {
     return (
-        <>
+        <div>
         <Products />
         <Carousel />
-        </>
+        </div>
         
         
 
