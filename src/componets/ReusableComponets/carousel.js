@@ -2,12 +2,12 @@ import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import Container from "./ReusableComponets/Container";
 import Loader from "./ReusableComponets/loader";
-import Pagination from'./Pagination';
+import Carousel from "react-elastic-carousel";
 
 import './p_style.css';
 
-const Products = () => {
-  const { products, paginate, postsPerPage, isLoading, currentPosts } = useContext(ShopContext);
+const Carousels = () => {
+  const { products, isLoading, } = useContext(ShopContext);
 
   return (
     <div className="products">
@@ -15,10 +15,11 @@ const Products = () => {
       <Container>
         <div className="product">
 
-            
+        <Carousel>
             {!isLoading ? (
-              currentPosts &&
-              currentPosts.map((Products) => (
+              
+              products &&
+              products.map((Products) => (
                 
                 <div className="p-box">
                    <a href={Products.link}><p>{Products.title}</p></a>
@@ -36,19 +37,15 @@ const Products = () => {
                   </div>
 
                 </div>
-
+                
 
               ))
             ) : (
               <Loader />
             )}
+            </Carousel>
 
             
-            <Pagination
-            postsPerPage={postsPerPage}
-            totalPosts={products.length}
-            paginate={paginate}
-          />
         </div>
         
       </Container>
@@ -56,4 +53,4 @@ const Products = () => {
   );
 };
 
-export default Products; 
+export default Carousels; 
