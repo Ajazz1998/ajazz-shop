@@ -29,7 +29,7 @@ export const ShopState = ({ children }) => {
     const currentPosts = products.slice(indexOfFirstPost, indexOfLastPost);
 
      // Change page
-    const paginate = (pageNumber, e) => {setCurrentPage(pageNumber)};
+    const paginate = (pageNumber) => {setCurrentPage(pageNumber)};
 
     return (
         <ShopContext.Provider

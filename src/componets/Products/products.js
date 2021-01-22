@@ -14,9 +14,7 @@ const Products = () => {
     
       <Container>
         <div className="product">
-            {currentPosts && currentPosts.length === 0 && (
-              <h1 className="error">Result not found</h1>
-            )}
+
             
             {!isLoading ? (
               currentPosts &&
