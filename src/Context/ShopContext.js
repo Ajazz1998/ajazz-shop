@@ -6,7 +6,7 @@ export const ShopState = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(3);
+    const [postsPerPage] = useState(9);
 
     const getProducts = async () => {
       setIsLoading(true);
