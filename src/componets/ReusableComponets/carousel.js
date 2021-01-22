@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
-import Container from "../ReusableComponets/Container";
-import Loader from "../ReusableComponets/loader";
-import Pagination from '../ReusableComponets/Pagination';
+import Container from "./ReusableComponets/Container";
+import Loader from "./ReusableComponets/loader";
+import Pagination from'./Pagination';
 
 import './p_style.css';
 
