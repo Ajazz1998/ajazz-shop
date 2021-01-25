@@ -1,54 +1,54 @@
-import { useContext } from "react";
-import { ShopContext } from "../../Context/ShopContext";
-import Container from "./ReusableComponets/Container";
-import Loader from "./ReusableComponets/loader";
-import Carousel from "react-elastic-carousel";
+// import { useContext } from "react";
+// import { ShopContext } from "../../Context/ShopContext";
+// import Container from "./ReusableComponets/Container";
+// import Loader from "./ReusableComponets/loader";
+// import Carousel from "react-elastic-carousel";
 
-const Carousels = () => {
-  const { products, isLoading, } = useContext(ShopContext);
+// const Carousels = () => {
+//   const { products, isLoading, } = useContext(ShopContext);
 
-  return (
-    <div className="products">
+//   return (
+//     <div className="products">
     
-      <Container>
-        <div className="product">
+//       <Container>
+//         <div className="product">
 
-        <Carousel>
-            {!isLoading ? (
+//         <Carousel>
+//             {!isLoading ? (
               
-              products &&
-              products.map((Products) => (
+//               products &&
+//               products.map((Products) => (
                 
-                <div className="p-box">
-                   <a href={Products.link}><p>{Products.title}</p></a>
-                   <a href={Products.link}><img
-                   key={Products.id}
-                   src={`${Products.img}`}
-                   alt="poster"
-                   className="img"
-                 /></a>
+//                 <div className="p-box">
+//                    <a href={Products.link}><p>{Products.title}</p></a>
+//                    <a href={Products.link}><img
+//                    key={Products.id}
+//                    src={`${Products.img}`}
+//                    alt="poster"
+//                    className="img"
+//                  /></a>
                    
-                  <div className="p-details">
-                      <p className="price">{Products.price}</p>
+//                   <div className="p-details">
+//                       <p className="price">{Products.price}</p>
                       
-                      <p>{Products.rate}</p>
-                  </div>
+//                       <p>{Products.rate}</p>
+//                   </div>
 
-                </div>
+//                 </div>
                 
 
-              ))
-            ) : (
-              <Loader />
-            )}
-            </Carousel>
+//               ))
+//             ) : (
+//               <Loader />
+//             )}
+//             </Carousel>
 
             
-        </div>
+//         </div>
         
-      </Container>
-    </div>
-  );
-};
+//       </Container>
+//     </div>
+//   );
+// };
 
-export default Carousels; 
+// export default Carousels; 
