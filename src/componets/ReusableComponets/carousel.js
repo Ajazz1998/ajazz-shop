@@ -5,7 +5,7 @@ import Container from "./ReusableComponets/Container";
 import Loader from "./ReusableComponets/loader";
 import Carousel from "react-elastic-carousel";
 
-const Carousels = () => {
+const carousel = () => {
   const { products, isLoading, } = useContext(ShopContext);
 
   return (
@@ -52,4 +52,4 @@ const Carousels = () => {
   );
 };
 
-export default Carousels; 
+export default carousel; 
