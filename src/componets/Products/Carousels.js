@@ -17,7 +17,7 @@ const Carousels = () => {
     <div className="products">
     
       <Container>
-        <div className="product">
+        <div className="">
 
         <Swiper
         spaceBetween={50}
