@@ -6,20 +6,21 @@ import Loader from "../ReusableComponets/loader";
 import './p_style.css';
 
 const Products = () => {
-  const { isLoading, currentPosts } = useContext(ShopContext);
+  const { isLoading, products } = useContext(ShopContext);
 
   return (
     <div className="products">
-    
       <Container>
         <div className="product">
 
             
             {!isLoading ? (
-              currentPosts &&
-              currentPosts.map((Products) => (
-                
+              products &&
+              products.map((Products) => (
+
                 <div className="p-box">
+                <p> Hello</p>
+
                    <a href={Products.link}><p>{Products.title}</p></a>
                    <a href={Products.link}><img
                    key={Products.id}

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import Container from "../ReusableComponets/Container";
 import Loader from "../ReusableComponets/loader";
+import { Link } from "react-router-dom";
 import Pagination from '../ReusableComponets/Pagination';
 
 import './p_style.css';
@@ -21,13 +22,13 @@ const Products = () => {
               currentPosts.map((Products) => (
                 
                 <div className="p-box">
-                   <a href={Products.link}><p>{Products.title}</p></a>
-                   <a href={Products.link}><img
+                   <Link to={`/products/${Products.id}`}><p>{Products.title}</p></Link>
+                   <Link to={`/products/${Products.id}`}><img
                    key={Products.id}
                    src={`${Products.img}`}
                    alt="poster"
                    className="img"
-                 /></a>
+                 /></Link>
                    
                   <div className="p-details">
                       <p className="price">{Products.price}</p>
