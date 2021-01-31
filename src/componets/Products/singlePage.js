@@ -18,7 +18,7 @@ const Products = () => {
               products &&
               products.map((Products) => (
 
-                <div className="p-box">
+                // <div className="p-box">
                 <p> Hello</p>
 
                    <a href={Products.link}><p>{Products.title}</p></a>
