@@ -40,7 +40,7 @@ const Products = () => {
 
               ))
             ) : (
-              // <Loader />
+              <Loader />
             )}
 
         </div>
