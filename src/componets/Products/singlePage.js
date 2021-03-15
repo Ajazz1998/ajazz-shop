@@ -20,7 +20,7 @@ const Products = () => {
 
                 <div className="p-box">
                 <p> Hello</p>
-
+                            
                    <a href={Products.link}><p>{Products.title}</p></a>
                    <a href={Products.link}><img
                    key={Products.id}
@@ -40,7 +40,7 @@ const Products = () => {
 
               ))
             ) : (
-              <Loader />
+              // <Loader />
             )}
 
         </div>
